@@ -10,7 +10,7 @@ import path from 'path';
 import { fileURLToPath } from 'url';
 
 const ROOT     = path.dirname(fileURLToPath(import.meta.url));
-const OUT_DIR  = path.join(ROOT, 'docs');
+const OUT_DIR  = path.join(ROOT, 'dist-web');
 const OUT_FILE = path.join(OUT_DIR, 'index.html');
 
 const read  = (...parts) => fs.readFileSync(path.join(ROOT, ...parts), 'utf-8');
@@ -168,4 +168,4 @@ fs.mkdirSync(OUT_DIR, { recursive: true });
 fs.writeFileSync(OUT_FILE, html, 'utf-8');
 
 const sizeKB = Math.round(fs.statSync(OUT_FILE).size / 1024);
-console.log(`✓ Built: docs/index.html  (${sizeKB} KB)`);
+console.log(`✓ Built: dist-web/index.html  (${sizeKB} KB)`);

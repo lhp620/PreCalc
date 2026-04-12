@@ -1,9 +1,10 @@
 # Dependencies
 node_modules/
 
-# Build outputs (docs/ is kept for GitHub Pages)
+# Build outputs (local offline use only, not deployed)
 dist/
 dist-web/
+docs/
 
 # Utility scripts
 fix-backslashes.js
