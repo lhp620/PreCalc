@@ -1,9 +1,8 @@
 # Dependencies
 node_modules/
 
-# Build outputs (local offline use only, not deployed)
+# Build outputs
 dist/
-dist-web/
 docs/
 
 # Utility scripts
