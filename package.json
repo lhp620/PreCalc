@@ -1,0 +1,11 @@
+{
+  "name": "precalc-learning",
+  "version": "1.0.0",
+  "description": "Interactive Pre-Calculus learning platform",
+  "scripts": {
+    "build:web": "node build-web.mjs"
+  },
+  "dependencies": {
+    "katex": "^0.16.45"
+  }
+}

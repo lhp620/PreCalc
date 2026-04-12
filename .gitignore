@@ -1,0 +1,30 @@
+# Dependencies
+node_modules/
+
+# Build outputs (docs/ is kept for GitHub Pages)
+dist/
+dist-web/
+
+# Utility scripts
+fix-backslashes.js
+stub-gen.js
+
+# Vite cache
+.vite/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor directories
+.vscode/
+.idea/
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Environment files
+.env
+.env.local
