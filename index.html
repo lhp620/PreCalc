@@ -14,6 +14,7 @@
   <meta name="twitter:description" content="67 lessons, instant feedback, progress tracking. Free forever.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://www.gstatic.com">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" crossorigin="anonymous">
   <link rel="stylesheet" href="index.css">
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📊</text></svg>">
@@ -26,9 +27,23 @@
     <footer class="site-footer">
       <div class="container">
         <p>Pre-Calculus Interactive Learning &nbsp;·&nbsp; 11 Units &nbsp;·&nbsp; 67 Lessons &nbsp;·&nbsp; Progress saved in your browser</p>
+        <p style="font-size: 0.75rem; margin-top: 8px;">
+          <a href="https://github.com/lhp620/PreCalc" target="_blank" rel="noopener" class="footer-link">GitHub Repository</a>
+          <span class="footer-sep">|</span>
+          <a href="https://github.com/lhp620/PreCalc/issues" target="_blank" rel="noopener" class="footer-link">Report a Bug</a>
+          <span class="footer-sep">|</span>
+          <a href="https://ko-fi.com/lllstudio" target="_blank" rel="noopener" class="footer-link footer-link-kofi">☕ Support on Ko-fi</a>
+        </p>
       </div>
     </footer>
   </div>
+
+  <!-- Firebase SDK (compat) -->
+  <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-auth-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-firestore-compat.js"></script>
+  <script src="firebase-config.js"></script>
+  <script src="auth.js"></script>
 
   <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js" crossorigin="anonymous"></script>
   <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js" crossorigin="anonymous"

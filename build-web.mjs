@@ -152,6 +152,13 @@ ${appCSS}
     </footer>
   </div>
 
+  <!-- Firebase SDK (compat) -->
+  <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-auth-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-firestore-compat.js"></script>
+  <script src="firebase-config.js"></script>
+  <script src="auth.js"></script>
+
   <!-- KaTeX runtime (inlined) -->
   <script>${katexJS}</script>
   <script>${autoRender}; window.__katexLoaded = true; if (window.__katexReady) window.__katexReady();</script>

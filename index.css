@@ -1184,6 +1184,37 @@ main {
   color: var(--color-text-muted);
 }
 
+.footer-link {
+  color: var(--color-text-muted);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.footer-link:hover {
+  color: var(--color-text-secondary);
+}
+
+.footer-link-kofi {
+  color: var(--color-amber);
+}
+
+.footer-link-kofi:hover {
+  color: var(--color-amber-light);
+}
+
+.footer-sep {
+  margin: 0 8px;
+  color: var(--color-border);
+}
+
+.nav-link-kofi {
+  color: var(--color-amber) !important;
+}
+
+.nav-link-kofi:hover {
+  color: var(--color-amber-light) !important;
+}
+
 /* ============================================================
    ANIMATIONS
    ============================================================ */
@@ -1318,6 +1349,78 @@ main {
   display: flex;
   align-items: center;
   gap: 16px;
+}
+
+/* ─── Auth button ────────────────────────────────────── */
+.nav-auth {
+  display: flex;
+  align-items: center;
+}
+
+.btn-signin {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  padding: 6px 14px;
+  background: rgba(124, 58, 237, 0.15);
+  border: 1px solid rgba(124, 58, 237, 0.45);
+  border-radius: var(--radius-sm);
+  color: var(--color-violet-light);
+  font-size: 0.8rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s, border-color 0.2s;
+  white-space: nowrap;
+}
+
+.btn-signin:hover {
+  background: rgba(124, 58, 237, 0.28);
+  border-color: rgba(124, 58, 237, 0.7);
+}
+
+.nav-user {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.nav-user-avatar {
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  border: 1.5px solid var(--color-violet-light);
+  object-fit: cover;
+}
+
+.nav-user-name {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--color-text-secondary);
+  max-width: 90px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.btn-signout {
+  padding: 4px 10px;
+  background: none;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  color: var(--color-text-muted);
+  font-size: 0.75rem;
+  cursor: pointer;
+  transition: border-color 0.2s, color 0.2s;
+  white-space: nowrap;
+}
+
+.btn-signout:hover {
+  border-color: var(--color-rose);
+  color: var(--color-rose);
+}
+
+@media (max-width: 640px) {
+  .nav-auth { display: none; }
 }
 
 .mobile-menu-btn {

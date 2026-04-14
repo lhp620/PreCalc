@@ -47,6 +47,7 @@ function setLessonMastered(lessonId, score, total) {
     lastVisited: Date.now(),
   };
   localStorage.setItem(STORAGE_KEY, JSON.stringify(p));
+  if (typeof window.onProgressSaved === 'function') window.onProgressSaved(p);
   updateStreak();
 }
 
@@ -55,6 +56,7 @@ function markLessonVisited(lessonId) {
   if (!p[lessonId]) {
     p[lessonId] = { status: 'in-progress', score: 0, total: 0, lastVisited: Date.now() };
     localStorage.setItem(STORAGE_KEY, JSON.stringify(p));
+    if (typeof window.onProgressSaved === 'function') window.onProgressSaved(p);
   }
 }
 
@@ -533,4 +535,10 @@ handleRoute();
 window.addEventListener('hashchange', () => {
   handleRoute();
   window.scrollTo(0, 0);
+});
+
+// Re-render when another device syncs progress via Firestore
+window.addEventListener('progress:synced', () => {
+  handleRoute();
+  updateHeaderProgress();
 });
